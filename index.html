@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- Project  Counter-->
+<div class="container">
+    <button id="add" class="btn btn-lg btn-primary my-5 mx-2">Add</button>
+    <button id="back" class="btn btn-lg btn-warning my-5 mx-2">Back</button>
+    <hr>
+    <h1 id="data">0</h1>
+    <hr>
+    <p id="message"></p>
+</div>
+
+
+ <div class="container">
+   <button id="forward" class="btn btn-lg btn-success my-5 mx-2">Start Countiong</button>
+   <button id="backward" class="btn btn-lg btn-danger my-5 mx-2">Stop Counting</button>
+   <button id="reset" class="btn btn-lg btn-warning my-5 mx-2">Reset</button>
+   <hr>
+   <h1 id="data_1">0</h1>
+   <hr>
+   <p id="message_1"></p>
+</div>
+
+<audio id="n1" src="./assets/sounds/s1.wav"></audio>
+<audio id="n2" src="./assets/sounds/s2.wav"></audio>
+<audio id="n3" src="./assets/sounds/s3.mp3"></audio>
+<audio id="n4" src="./assets/sounds/s4.mp3"></audio>
+<audio id="n5" src="./assets/sounds/s5.mp3"></audio>
+<audio id="a1" src="./assets/sounds/a1.mp3"></audio>
+<audio id="a2" src="./assets/sounds/a2.mp3"></audio>
+
+<hr>
+<!-- Elementor Project -->
+<hr>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card shadow">
+                <div class="card-header moduleHeader d-flex align-items-center">
+                    <i class="fas fa-bars text-white"></i>
+                    <h5 class="mx-5 text-white">elementor</h5>
+                    <i class="fas fa-th text-white"></i>
+                </div>
+                <div class="card-body">
+                    <div class="form-group my-3">
+                        <label for="">Heading</label>
+                        <input id="heading" class="form-control" type="text">
+                    </div>
+                    <div class="form-group my-3">
+                        <label for="">Text Align</label>
+                        <br>
+                        <label>
+                            <input name="align" checked class="align" type="radio" value="left"> Left
+                        </label>
+                        <label>
+                            <input name="align" class="align" type="radio" value="center"> Center
+                        </label>
+                        <label>
+                            <input name="align" class="align" type="radio" value="right"> Right
+                        </label>
+                    </div>
+                    <div class="form-group my-3">
+                        <label for="">Size</label>
+                        <input id="fontSize" class="w-100" min="0" max="100" step="1px" value="20" type="range">
+                    </div>
+                    <div class="form-group my-3">
+                        <label for="">Color</label>
+                        <input id="color" type="color">
+                    </div>
+                    <div class="form-group my-3">
+                        <label for="">Font Family</label>
+                        <select class="form-control" name="" id="fontFamily">
+                            <option value="">-Select-</option>
+                            <option value="Impact">Impact</option>
+                            <option value="Poppins">Poppins</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Dancing Script">Dancing Script</option>
+                            <option value="Lobster">Lobster</option>
+                        </select>
+                    </div>
+                    <div class="form-group my-3">
+                        <label for="">Font Weight</label>
+                        <select class="form-control" name="" id="fontWeight">
+                            <option value="">-Select-</option>
+                            <option value="Thin 100">Thin 100</option>
+                            <option value="Thin 100 Italic">Thin 100 Italic</option>
+                            <option value="ExtraLight 200">ExtraLight 200</option>
+                            <option value="Light 300">Light 300</option>
+                            <option value="Light 300 Italic">Light 300 Italic</option>
+                            <option value="Regular 400">Regular 400</option>
+                            <option value="Regular 400 Italic">Regular 400 Italic</option>
+                            <option value="Medium 500">Medium 500</option>
+                            <option value="Medium 500 Italic">Medium 500 Italic</option>
+                            <option value="SemiBold 600">SemiBold 600</option>
+                            <option value="SemiBold 600 Italic">SemiBold 600 Italic</option>
+                            <option value="Bold 700">Bold 700</option>
+                            <option value="Bold 700 Italic">Bold 700 Italic</option>
+                            <option value="ExtraBold 800">ExtraBold 800</option>
+                            <option value="ExtraBold 800 Italic">ExtraBold 800 Italic</option>
+                            <option value="Black 900">Black 900</option>
+                            <option value="Black 900 Italic">Black 900 Italic</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 output shadow">
+            <section>
+                <h2 id="elementorOutput"></h2>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<!-- Class 14 form Project -->
+
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow">
+                <div class="card-header text-center">
+                    <h3>Create An Account</h3>
+                </div>
+                <div class="card-body">
+                    <div class="msg">
+                       
+                    </div>
+                    <form id="userDataForm" action="">
+                        <div class="my-3">
+                            <label for="">Name</label>
+                            <input id="name" class="form-control" type="text">
+                            <p class="name-req"></p>
+                        </div>
+                        <div class="my-3">
+                            <label for="">Email</label>
+                            <input id="email" class="form-control" type="text">
+                            <p class="email-req"></p>
+                        </div>
+                        <div class="my-3">
+                            <label for="">Phone Number</label>
+                            <input id="phone" class="form-control" type="text">
+                            <p class="phone-req"></p>
+                        </div>
+                        <div class="my-3">
+                            <label for="">User Name</label>
+                            <input id="uName" class="form-control" type="text">
+                            <p class="uname-req"></p>
+                        </div>
+                        <div class="my-3">
+                            <button class="btn btn-primary" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="./app/function.js"></script>
+<script src="./app/app.js"></script>
+</body>
+</html>
